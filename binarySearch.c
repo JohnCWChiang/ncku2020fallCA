@@ -15,14 +15,14 @@ int binarySearch( int arr[], int low, int high, int x ) {
 
 int main ( void ) {
 
-    int arr[SIZE] = {1, 3, 4, 6, 9, 12, 14, 15, 17, 19, 24};
-    int x = 12;
+    int arr[SIZE] = { 1, 3, 4, 6, 9, 12, 14, 15, 17, 19, 24 };
+    int x = 13;
     int result = binarySearch( arr, 0, SIZE-1, x );
 
     if( result != -1 ) {
         printf( "found at index %d\n", result);
     } else {
-        printf("not found\n" );
+        printf("search element %d not found\n", x );
     }
 
     return 0;
